@@ -32,10 +32,10 @@ spec:
               value: "yourpassword"
             - name: MYSQL_DATABASE
               value: "phonebook"
-            - name: MYSQL_USER
-              value: "youruser"
-            - name: MYSQL_PASSWORD
-              value: "yourpassword"
+            - name: MYSQL_USER #!  This is the secret that we created in secret.yaml
+              value: "youruser" #!  This is the secret that we created in secret.yaml
+            - name: MYSQL_PASSWORD #! This is the secret that we created in secret.yaml
+              value: "yourpassword" #! This is the secret that we created in secret.yaml
           ports:
             - containerPort: 3306
               name: mysql
