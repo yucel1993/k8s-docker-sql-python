@@ -17,6 +17,11 @@ spec:
           image: burhanycl/result_project206
           ports:
             - containerPort: 80
+          # envFrom:    #!  This is the secret that we created in goodexampleofsecretyaml
+          # - secretRef:
+          #     name: mysql-secret
+          # - configMapRef:
+          #     name: mysql-cm
           env:
             - name: MYSQL_DATABASE_HOST
               value: "mysql-service"
