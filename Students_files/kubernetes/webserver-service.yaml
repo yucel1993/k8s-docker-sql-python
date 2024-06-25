@@ -15,6 +15,7 @@ spec:
       containers:
         - name: web-server
           image: burhanycl/webserver-project206
+          # image: {{ .Values.webserver_image }}
           ports:
             - containerPort: 80
           env:

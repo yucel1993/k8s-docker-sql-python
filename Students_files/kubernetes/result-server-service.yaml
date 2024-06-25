@@ -15,6 +15,7 @@ spec:
       containers:
         - name: result-server
           image: burhanycl/result_project206
+          # image: {{ .Values.resultserver_image }}
           ports:
             - containerPort: 80
           # envFrom:    #!  This is the secret that we created in goodexampleofsecretyaml
